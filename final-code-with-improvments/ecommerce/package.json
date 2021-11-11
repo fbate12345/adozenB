@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "build": "cd frontend && npm install && npm run build",
+    "start": "nodemon --watch ecommerce --exec node --experimental-modules ecommerce/app.js"
+    
   },
   "keywords": [],
   "author": "",
@@ -27,5 +29,9 @@
     "morgan": "^1.9.1",
     "nodemon": "^1.19.0",
     "uuid": "^3.3.2"
+  },
+  "engines": {
+    "node": "12.4.0",
+    "npm": "6.9.0"
   }
 }
